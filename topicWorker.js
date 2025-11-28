@@ -1,4 +1,3 @@
-// topicWorker.js
 const queue = [];
 
 process.on("message", (msg) => {
@@ -15,7 +14,7 @@ process.on("message", (msg) => {
         process.send({ status: "empty" });
       } else {
         const message = queue.shift();
-        process.send({ status: "received", message });
+        process.send({ status: "received", message: message });
       }
       break;
 

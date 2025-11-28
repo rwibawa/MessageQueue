@@ -4,7 +4,8 @@
   "description": "```js\r //index.js \r const { fork } = require(\"child_process\");",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test01.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Ryan Wibawa <ryan.wibawa@gmail.com>",
