@@ -11,10 +11,12 @@ class MessageQueue {
       console.error("Error: Topic name should be string");
       return;
     }
+
     if (!name.trim()) {
       console.error("Error: Empty topic name");
       return;
     }
+
     if (this.topics.has(name)) {
       console.error("Error: Topic name already exists");
       return;
@@ -31,6 +33,7 @@ class MessageQueue {
       console.error("Error: Topic name invalid");
       return;
     }
+    
     if (message === undefined || message === null || message === "") {
       console.error("Error: Message is empty");
       return;
